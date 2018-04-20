@@ -79,6 +79,8 @@ class RESTClient {
      *
      * @param   string      $url
      * @param   array       $params
+     * @param   array       $options
+     * @param   array       $headers
      * @return  mixed
      * @throws  \Exception
      */
@@ -90,7 +92,9 @@ class RESTClient {
      * Do a POST request
      *
      * @param   string      $url
-     * @param   mixed       $params
+     * @param   array       $params
+     * @param   array       $options
+     * @param   array       $headers
      * @return  mixed
      * @throws  \Exception
      */
@@ -102,7 +106,9 @@ class RESTClient {
      * Do a PUT request
      *
      * @param   string      $url
-     * @param   mixed       $params
+     * @param   array       $params
+     * @param   array       $options
+     * @param   array       $headers
      * @return  mixed
      * @throws  \Exception
      */
@@ -114,7 +120,9 @@ class RESTClient {
      * Do a PATCH request
      *
      * @param   string      $url
-     * @param   mixed       $params
+     * @param   array       $params
+     * @param   array       $options
+     * @param   array       $headers
      * @return  mixed
      * @throws  \Exception
      */
@@ -127,7 +135,9 @@ class RESTClient {
      *
      * @param   string      $type
      * @param   string      $url
-     * @param   mixed       $params
+     * @param   array       $params
+     * @param   array       $options
+     * @param   array       $headers
      * @return  mixed
      * @throws  \Exception
      */
@@ -139,7 +149,9 @@ class RESTClient {
      * Do a DELETE request
      *
      * @param   string      $url
-     * @param   mixed       $params
+     * @param   array       $params
+     * @param   array       $options
+     * @param   array       $headers
      * @return  mixed
      * @throws  \Exception
      */
@@ -150,10 +162,13 @@ class RESTClient {
     /**
      * Calls the adapter which will perform the request
      *
-     * @param   string      $type
-     * @param   string      $url
-     * @param   array       $params
-     * @return  mixed
+     * @param   string              $type
+     * @param   string              $url
+     * @param   array               $params
+     * @param   array               $options
+     * @param   array               $headers
+     * @return  Result
+     * @throws  NoAdapterException
      * @throws  \Exception
      */
     protected function makeCall($type, $url, $params, $options, $headers) {

@@ -21,12 +21,7 @@ Using the Library
 $api = new \Weblab\RESTClient\RESTClient();
 
 $adapter = (new \Weblab\RESTClient\Adapters\OAuth)
-    ->setURL($authURL)
-    ->setClientID($clientID)
-    ->setSecret($clientSecret)
-    ->setAccessToken($accessToken)
-    ->setRefreshToken($refreshToken)
-    ->setRedirectURI($redirectURI);
+    ->setAccessToken($accessToken);
 
 $api->setAdapter($adapter);
 $api->setBaseURL('https://api.weblab.nl');

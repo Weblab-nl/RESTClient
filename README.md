@@ -15,7 +15,7 @@ Installation
 Using the Library
 -----------------
 
-#### Setup api
+#### Setup client
 
 ```php
 $api = new \Weblab\RESTClient\RESTClient();

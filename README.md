@@ -1,7 +1,8 @@
 WebLab B.V. - RESTClient
 ==================================
 
-This library will help you implement REST APIs faster. There is a base class which 
+This library will help you implement REST APIs faster. Just add an adapter that implements the interface, set the base URL and you are good to go.
+It's shipped with an OAuth adapter.
 
 
 Installation
